@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package",
   "name": "@hvn-oss/create",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Curated Vite+ project templates from HVN OSS.",
   "homepage": "https://github.com/hvn-oss/create#readme",
   "bugs": {

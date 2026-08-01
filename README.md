@@ -48,7 +48,9 @@ vp run build
 
 ## Publishing
 
-The npm package must be published publicly as `@hvn-oss/create`. Publishing is intentionally manual. Before publishing, confirm that the package archive contains the template sources and excludes generated `dist` and `node_modules` directories.
+Changesets manages releases through `.github/workflows/release.yml`. Changes merged to `main` update the version pull request; merging that pull request validates, packs, and publishes `@hvn-oss/create` through npm trusted publishing.
+
+Configure npm's trusted publisher with organization `hvn-oss`, repository `create`, workflow `release.yml`, and the `npm publish` action. The workflow intentionally does not use an npm token.
 
 After publishing, verify the manifest and scaffold into a disposable directory:
 

@@ -6,10 +6,10 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "@hvn-oss/create"
+      "repo": "hvn-oss/create"
     }
   ],
-  "commit": true,
+  "commit": false,
   "ignore": [],
   "fixed": [],
   "linked": [],

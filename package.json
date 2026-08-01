@@ -30,7 +30,8 @@
     "build": "vp run react-library-starter#build",
     "check": "vp run react-library-starter#check",
     "test": "vp run react-library-starter#test",
-    "ready": "vp run check && vp run test && vp run build"
+    "ready": "vp run check && vp run test && vp run build",
+    "clean": "vp run -r clean && git clean -fdx node_modules dist .output"
   },
   "devDependencies": {
     "@changesets/changelog-github": "1.0.0-next.8",

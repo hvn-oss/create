@@ -33,6 +33,7 @@
     "ready": "vp run check && vp run test && vp run build"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "1.0.0-next.8",
     "@changesets/cli": "3.0.0-next.10",
     "@hvn-oss/tsconfig": "^0.0.2",
     "@types/node": "^26.1.1",

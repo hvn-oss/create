@@ -30,7 +30,13 @@
     "build": "vp run react-library-starter#build",
     "check": "vp run react-library-starter#check",
     "test": "vp run react-library-starter#test",
-    "prepack": "vp run check && vp run test && vp run build"
+    "ready": "vp run check && vp run test && vp run build",
+    "prepack": "vp run build",
+    "version": "vpx changeset version",
+    "release": "vpx changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "3.0.0-next.10"
   },
   "packageManager": "pnpm@11.18.0",
   "createConfig": {

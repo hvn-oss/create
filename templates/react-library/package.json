@@ -33,7 +33,6 @@
     "dev": "vp pack --watch",
     "test": "vp test",
     "check": "vp check",
-    "prepublishOnly": "vp run build",
     "clean": "git clean -fdx dist node_modules .output"
   },
   "devDependencies": {

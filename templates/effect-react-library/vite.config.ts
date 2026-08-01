@@ -13,8 +13,11 @@ export default defineConfig({
       typeCheck: true,
     },
   },
+  fmt: {},
   test: {
     passWithNoTests: true,
+    environment: "jsdom",
+    globals: true,
+    setupFiles: ["./tests/setup.ts"],
   },
-  fmt: {},
 });

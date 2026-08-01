@@ -1,6 +1,6 @@
-# Node Library Starter
+# Effect Library Starter
 
-A minimal Node.js library built with TypeScript, Vite+, tsdown, and Vitest.
+A minimal Effect library built with TypeScript, Vite+, tsdown, and `@effect/vitest`.
 
 ## Setup
 
@@ -23,7 +23,7 @@ Check formatting, lint rules, and types:
 vp check
 ```
 
-Run the unit tests:
+Run the Effect-based unit tests:
 
 ```bash
 vp test
@@ -35,4 +35,4 @@ Build the library:
 vp pack
 ```
 
-The public API is exported from `src/index.ts`. `vp pack` writes ESM and TypeScript declarations to `dist`.
+The public API is exported from `src/index.ts`. `vp pack` writes ESM and TypeScript declarations to `dist` while keeping Effect external for consumers.

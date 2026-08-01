@@ -47,9 +47,24 @@
   "createConfig": {
     "templates": [
       {
+        "name": "node-library",
+        "description": "Node.js library with TypeScript, Vitest, and Vite+",
+        "template": "./templates/node-library"
+      },
+      {
+        "name": "effect-library",
+        "description": "Effect library with TypeScript, @effect/vitest, and Vite+",
+        "template": "./templates/effect-library"
+      },
+      {
         "name": "react-library",
         "description": "React component library with TypeScript, Vitest, and Vite+",
         "template": "./templates/react-library"
+      },
+      {
+        "name": "effect-react-library",
+        "description": "Effect and React library with TypeScript, Vitest, and Vite+",
+        "template": "./templates/effect-react-library"
       }
     ]
   }

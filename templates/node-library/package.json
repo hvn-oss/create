@@ -3,7 +3,7 @@
   "name": "node-library",
   "version": "0.0.0",
   "private": true,
-  "description": "A starter for creating a TypeScript package.",
+  "description": "A Node.js library built with TypeScript and Vite+.",
   "homepage": "https://github.com/author/library#readme",
   "bugs": {
     "url": "https://github.com/author/library/issues"

@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@hvn-oss/tsconfig/vp-react-library",
+  "include": ["**/*.ts", "**/*.tsx"]
+}

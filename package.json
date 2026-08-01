@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@hvn-oss/create",
+  "version": "0.0.0",
+  "description": "Curated Vite+ project templates from HVN OSS.",
+  "homepage": "https://github.com/hvn-oss/create#readme",
+  "bugs": {
+    "url": "https://github.com/hvn-oss/create/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hvn-oss/create.git"
+  },
+  "files": [
+    "templates/*/_*",
+    "templates/*/LICENSE",
+    "templates/*/README.md",
+    "templates/*/package.json",
+    "templates/*/pnpm-workspace.yaml",
+    "templates/*/src/**",
+    "templates/*/tests/**",
+    "templates/*/tsconfig.json",
+    "templates/*/vite.config.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vp run react-library-starter#build",
+    "check": "vp run react-library-starter#check",
+    "test": "vp run react-library-starter#test",
+    "prepack": "vp run check && vp run test && vp run build"
+  },
+  "packageManager": "pnpm@11.18.0",
+  "createConfig": {
+    "templates": [
+      {
+        "name": "react-library",
+        "description": "React component library with TypeScript, Vitest, and Vite+",
+        "template": "./templates/react-library"
+      }
+    ]
+  }
+}

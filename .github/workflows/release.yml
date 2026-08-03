@@ -19,11 +19,11 @@ jobs:
       contents: read # to check out repo (actions/checkout)
     steps:
       - name: Check out repo
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           persist-credentials: false # recommended: do not persist git credentials on disk
       - name: Install Vite+
-        uses: voidzero-dev/setup-vp@v1
+        uses: voidzero-dev/setup-vp@250f29ce396baf5e8f24498e17c0dfdebabc26eb # v1
         with:
           node-version: 24
           run-install: false
@@ -45,11 +45,11 @@ jobs:
       pull-requests: write # to create pull request (changesets/action/version)
     steps:
       - name: Check out repo
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           persist-credentials: false # recommended: do not persist git credentials on disk
       - name: Install Vite+
-        uses: voidzero-dev/setup-vp@v1
+        uses: voidzero-dev/setup-vp@250f29ce396baf5e8f24498e17c0dfdebabc26eb # v1
         with:
           node-version: 24
           cache: false # recommended: avoid cache poisoning
@@ -73,11 +73,11 @@ jobs:
       contents: read # to check out repo (actions/checkout)
     steps:
       - name: Check out repo
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           persist-credentials: false # recommended: do not persist git credentials on disk
       - name: Install Vite+
-        uses: voidzero-dev/setup-vp@v1
+        uses: voidzero-dev/setup-vp@250f29ce396baf5e8f24498e17c0dfdebabc26eb # v1
         with:
           node-version: 24
           cache: false # recommended: avoid cache poisoning
@@ -90,6 +90,8 @@ jobs:
         run: vp install --frozen-lockfile
       - name: Build packages
         run: vp run build
+      - name: Smoke Test Packed Templates
+        run: vp run smoke
       - name: Pack packages
         id: pack
         uses: changesets/action/pack@c47fa68bd43bb8ae0bae7e558622593deebf5955 # v2.0.0-next.3
@@ -103,11 +105,11 @@ jobs:
       id-token: write # for trusted publishing (changesets/action/publish)
     steps:
       - name: Check out repo
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           persist-credentials: false # recommended: do not persist git credentials on disk
       - name: Install Vite+
-        uses: voidzero-dev/setup-vp@v1
+        uses: voidzero-dev/setup-vp@250f29ce396baf5e8f24498e17c0dfdebabc26eb # v1
         with:
           node-version: 24
           cache: false # recommended: avoid cache poisoning

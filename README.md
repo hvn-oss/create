@@ -16,6 +16,17 @@ Create a React library directly:
 vp create @hvn-oss:react-library
 ```
 
+Available templates:
+
+| Name                   | Description                                                 |
+| ---------------------- | ----------------------------------------------------------- |
+| `node-library`         | Node.js library with TypeScript, Vitest, and Vite+          |
+| `effect-library`       | Effect library with TypeScript, `@effect/vitest`, and Vite+ |
+| `react-library`        | React component library with TypeScript, Vitest, and Vite+  |
+| `effect-react-library` | Effect and React library with TypeScript, Vitest, and Vite+ |
+
+Select any template directly with `vp create @hvn-oss:<name>`.
+
 To inspect the available templates without prompting:
 
 ```bash

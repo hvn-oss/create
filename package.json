@@ -27,10 +27,11 @@
     "access": "public"
   },
   "scripts": {
-    "build": "vp run react-library-starter#build",
-    "check": "vp run react-library-starter#check",
-    "test": "vp run react-library-starter#test",
+    "build": "vp run --filter ./templates/* build",
+    "check": "vp run --filter ./templates/* check",
+    "test": "vp run --filter ./templates/* test",
     "ready": "vp run check && vp run test && vp run build",
+    "smoke": "node scripts/smoke-package.mjs",
     "clean": "vp run -r clean && git clean -fdx node_modules dist .output"
   },
   "devDependencies": {
@@ -47,9 +48,24 @@
   "createConfig": {
     "templates": [
       {
+        "name": "node-library",
+        "description": "Node.js library with TypeScript, Vitest, and Vite+",
+        "template": "./templates/node-library"
+      },
+      {
+        "name": "effect-library",
+        "description": "Effect library with TypeScript, @effect/vitest, and Vite+",
+        "template": "./templates/effect-library"
+      },
+      {
         "name": "react-library",
         "description": "React component library with TypeScript, Vitest, and Vite+",
         "template": "./templates/react-library"
+      },
+      {
+        "name": "effect-react-library",
+        "description": "Effect and React library with TypeScript, Vitest, and Vite+",
+        "template": "./templates/effect-react-library"
       }
     ]
   }

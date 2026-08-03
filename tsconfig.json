@@ -1,4 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@hvn-oss/tsconfig/library"
+  "compilerOptions": {
+    "noEmit": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "allowImportingTsExtensions": true,
+    "esModuleInterop": true
+  }
 }

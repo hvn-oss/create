@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "react-library",
+  "name": "effect-library",
   "version": "0.0.0",
   "private": true,
-  "description": "A React component library built with TypeScript and Vite+.",
+  "description": "An Effect library built with TypeScript and Vite+.",
   "homepage": "https://github.com/author/library#readme",
   "bugs": {
     "url": "https://github.com/author/library/issues"
@@ -36,23 +36,17 @@
     "check": "vp check",
     "clean": "git clean -fdx dist node_modules .output"
   },
+  "dependencies": {
+    "effect": "4.0.0-beta.102"
+  },
   "devDependencies": {
+    "@effect/vitest": "4.0.0-beta.102",
     "@hvn-oss/tsconfig": "^0.0.2",
-    "@testing-library/dom": "^10.4.1",
-    "@testing-library/jest-dom": "^7.0.0",
-    "@testing-library/react": "^16.3.2",
-    "@types/node": "^26.1.2",
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.4",
+    "@types/node": "^26.1.1",
     "bumpp": "^11.1.0",
-    "jsdom": "^30.0.1",
     "typescript": "^7.0.2",
     "vite": "npm:@voidzero-dev/vite-plus-core@0.2.7",
     "vite-plus": "0.2.7"
-  },
-  "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
   },
   "engines": {
     "node": "^20.19.0 || ^22.18.0 || >=24.11.0"

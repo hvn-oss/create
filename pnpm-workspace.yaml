@@ -15,3 +15,5 @@ peerDependencyRules:
 packages:
   - templates/*
   - "."
+allowBuilds:
+  msgpackr-extract: false

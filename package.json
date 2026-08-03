@@ -31,6 +31,7 @@
     "check": "vp run --filter ./templates/* check",
     "test": "vp run --filter ./templates/* test",
     "ready": "vp run check && vp run test && vp run build",
+    "smoke": "node scripts/smoke-package.mjs",
     "clean": "vp run -r clean && git clean -fdx node_modules dist .output"
   },
   "devDependencies": {

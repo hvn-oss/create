@@ -12,3 +12,5 @@ minimumReleaseAgeExclude:
 peerDependencyRules:
   allowedVersions:
     vite: "*"
+allowBuilds:
+  msgpackr-extract: false

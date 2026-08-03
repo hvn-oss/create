@@ -1,5 +1,11 @@
 # @hvn-oss/create
 
+## 0.0.2
+
+### Patch Changes
+
+- [#5](https://github.com/hvn-oss/create/pull/5) [`e288227`](https://github.com/hvn-oss/create/commit/e2882273446f551354af236175a32203ffec03a3) Thanks [@danielfakunle](https://github.com/danielfakunle)! - Remove the unfinished fullstack monorepo template, document template Node.js requirements, preserve standalone install policies, and validate packed templates before release.
+
 ## 0.0.1
 
 ### Patch Changes

@@ -21,6 +21,12 @@ export default defineConfig({
   fmt: {},
   run: {
     tasks: {
+      check: {
+        command: "vp check",
+      },
+      test: {
+        command: ["cd templates/node-lib", "pnpm run test"],
+      },
       build: {
         command: ["cd templates/node-lib", "pnpm run build"],
       },

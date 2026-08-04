@@ -3,6 +3,7 @@
   "name": "@hvn-oss/create",
   "version": "0.0.0",
   "scripts": {
+    "prepare": "vp config",
     "postinstall": "vp run templates:install"
   },
   "devDependencies": {

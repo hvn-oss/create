@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@hvn-oss/create",
+  "version": "0.0.0",
+  "scripts": {
+    "postinstall": "vp run templates:install"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.2.7",
+    "vite-plus": "0.2.7"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.20.0",
+      "onFail": "download"
+    }
+  },
+  "createConfig": {
+    "templates": [
+      {
+        "name": "node-lib",
+        "description": "A Node.js library template.",
+        "template": "./templates/node-lib"
+      }
+    ]
+  }
+}

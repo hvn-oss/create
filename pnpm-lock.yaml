@@ -207,6 +207,9 @@ importers:
 
   .:
     devDependencies:
+      '@changesets/changelog-github':
+        specifier: ^0.7.0
+        version: 0.7.0
       '@changesets/cli':
         specifier: 3.0.0-next.11
         version: 3.0.0-next.11
@@ -249,6 +252,9 @@ packages:
     resolution: {integrity: sha512-v9YatKMVoljRPRPzI9PoxDHxBsLXZs+ndKBts6nOJlRpGHoGyzScOyC2YYce0krYhFxhn+lOiIto/7AOlTFuwA==}
     engines: {node: ^22.11 || ^24 || >=26}
 
+  '@changesets/changelog-github@0.7.0':
+    resolution: {integrity: sha512-rBsbRvc4TVn+FvFnOVM3LxlFJfTXXCp8gfVJ+0BubxWNSVnLuAzowi5j+IEraLLP52w8AAs9QfKbPS3MMiXQJA==}
+
   '@changesets/cli@3.0.0-next.11':
     resolution: {integrity: sha512-yH79OtoLPruqx0BTO0eKE1rxupgk7Qf1SzmVhwdDqikkOoFlPD5/QEAN3zvRXLoGcT0VN0Wuq2zCFTi8CyJgLA==}
     engines: {node: ^22.11 || ^24 || >=26, npm: '>=10.9.0', pnpm: '>=10.0.0', yarn: '>=4.5.2'}
@@ -270,6 +276,9 @@ packages:
     resolution: {integrity: sha512-zyukhblBz0TO7Ze4rJHS/LN8dLvNpKPGEm3YhYRpZnlRCT+r4X9YtrHJjUFHbnjn2wNRRzzy6eHzsFn43YI3jQ==}
     engines: {node: ^22.11 || ^24 || >=26}
 
+  '@changesets/get-github-info@0.8.0':
+    resolution: {integrity: sha512-cRnC+xdF0JIik7coko3iUP9qbnfi1iJQ3sAa6dE+Tx3+ET8bjFEm63PA4WEohgjYcmsOikPHWzPsMWWiZmntOQ==}
+
   '@changesets/git@4.0.0-next.9':
     resolution: {integrity: sha512-7WqrwEVpsKZKbBGR7hPRuHTbkIMiDdoyxSsQDOWrmuBh13wDTGaIV6yYQoOs0I3l56khxydm/68v01c/+4g9jQ==}
     engines: {node: ^22.11 || ^24 || >=26}
@@ -289,6 +298,9 @@ packages:
   '@changesets/should-skip-package@1.0.0-next.9':
     resolution: {integrity: sha512-KaDRCnNy+J4Q8vTZIyKGV3wtDyW79bJN7+XBg919ZKneAj7jJpJLIPkVK+MlyGqyWoxhWEcDBRZ3aTjVkx/tnw==}
     engines: {node: ^22.11 || ^24 || >=26}
+
+  '@changesets/types@6.1.0':
+    resolution: {integrity: sha512-rKQcJ+o1nKNgeoYRHKOS07tAMNd3YSN0uHaJOZYjBAgxfV7TUE7JE+z4BzZdQwb5hKaYbayKN5KrYV7ODb2rAA==}
 
   '@changesets/types@7.0.0-next.9':
     resolution: {integrity: sha512-okzQIKr+HZXZne37+QI0o0GrKNNTinP8jqsSdr2jUXEt8qhiwdG/X2o7aukp4WBtG4R395BOGyJVfaCy+xg7IA==}
@@ -1057,6 +1069,9 @@ packages:
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
 
+  dataloader@1.4.0:
+    resolution: {integrity: sha512-68s5jYdlvasItOJnCuI2Q9s4q98g0pCyL3HrcKJu8KNugUl8ahgmZYg38ysLTgQjjXX3H8CJLkAvWrclWfcalw==}
+
   dequal@2.0.3:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
     engines: {node: '>=6'}
@@ -1067,6 +1082,10 @@ packages:
 
   dom-accessibility-api@0.5.16:
     resolution: {integrity: sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg==}
+
+  dotenv@8.6.0:
+    resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}
+    engines: {node: '>=10'}
 
   es-module-lexer@2.3.1:
     resolution: {integrity: sha512-shc1dbU90Yl/xq1QrC7QRtfcwURZuVRfPhZbDoldJ1cn1gzDvBaBWlv0eFolj5+0znnPJz5TXLxsN77X/12KTA==}
@@ -1210,6 +1229,15 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  node-fetch@2.7.0:
+    resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+
   obug@2.1.4:
     resolution: {integrity: sha512-4a+OsYv9UktOJKE+l1A4OufDgdRF9PifWj+tJnHURo/P+WOxpG4GzUFL9qCalmWauao6ogiG+QvnCovwPoyAWA==}
     engines: {node: '>=12.20.0'}
@@ -1324,6 +1352,9 @@ packages:
     resolution: {integrity: sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==}
     engines: {node: '>=6'}
 
+  tr46@0.0.3:
+    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
+
   typescript@7.0.2:
     resolution: {integrity: sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==}
     engines: {node: '>=16.20.0'}
@@ -1382,6 +1413,12 @@ packages:
         optional: true
       jsdom:
         optional: true
+
+  webidl-conversions@3.0.1:
+    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
+
+  whatwg-url@5.0.0:
+    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
 
   why-is-node-running@2.3.0:
     resolution: {integrity: sha512-hUrmaWBdVDcxvYqnyh09zunKzROWjbZTiNy8dBEjkS7ehEDQibXJ7XvlmtbwuTclUiIyN+CyXQD4Vmko8fNm8w==}
@@ -1448,6 +1485,14 @@ snapshots:
     dependencies:
       '@changesets/types': 7.0.0-next.9
 
+  '@changesets/changelog-github@0.7.0':
+    dependencies:
+      '@changesets/get-github-info': 0.8.0
+      '@changesets/types': 6.1.0
+      dotenv: 8.6.0
+    transitivePeerDependencies:
+      - encoding
+
   '@changesets/cli@3.0.0-next.11':
     dependencies:
       '@changesets/apply-release-plan': 8.0.0-next.10
@@ -1492,6 +1537,13 @@ snapshots:
       '@changesets/types': 7.0.0-next.9
       semver: 7.8.5
 
+  '@changesets/get-github-info@0.8.0':
+    dependencies:
+      dataloader: 1.4.0
+      node-fetch: 2.7.0
+    transitivePeerDependencies:
+      - encoding
+
   '@changesets/git@4.0.0-next.9':
     dependencies:
       '@changesets/errors': 1.0.0-next.4
@@ -1520,6 +1572,8 @@ snapshots:
   '@changesets/should-skip-package@1.0.0-next.9':
     dependencies:
       '@changesets/types': 7.0.0-next.9
+
+  '@changesets/types@6.1.0': {}
 
   '@changesets/types@7.0.0-next.9': {}
 
@@ -1979,11 +2033,15 @@ snapshots:
 
   convert-source-map@2.0.0: {}
 
+  dataloader@1.4.0: {}
+
   dequal@2.0.3: {}
 
   detect-libc@2.1.2: {}
 
   dom-accessibility-api@0.5.16: {}
+
+  dotenv@8.6.0: {}
 
   es-module-lexer@2.3.1: {}
 
@@ -2083,6 +2141,10 @@ snapshots:
   mrmime@2.0.1: {}
 
   nanoid@3.3.17: {}
+
+  node-fetch@2.7.0:
+    dependencies:
+      whatwg-url: 5.0.0
 
   obug@2.1.4: {}
 
@@ -2203,6 +2265,8 @@ snapshots:
 
   totalist@3.0.1: {}
 
+  tr46@0.0.3: {}
+
   typescript@7.0.2:
     optionalDependencies:
       '@typescript/typescript-aix-ppc64': 7.0.2
@@ -2310,6 +2374,13 @@ snapshots:
       '@vitest/browser-preview': 4.1.10(@voidzero-dev/vite-plus-core@0.2.7(typescript@7.0.2)(yaml@2.9.0))(vitest@4.1.10)
     transitivePeerDependencies:
       - msw
+
+  webidl-conversions@3.0.1: {}
+
+  whatwg-url@5.0.0:
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
 
   why-is-node-running@2.3.0:
     dependencies:

@@ -2,6 +2,19 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "@hvn-oss/create",
   "version": "0.1.0",
+  "description": "Curated Vite+ project templates from HVN OSS.",
+  "homepage": "https://github.com/hvn-oss/create#readme",
+  "bugs": {
+    "url": "https://github.com/hvn-oss/create/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hvn-oss/create.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prepare": "vp config",
     "postinstall": "vp run templates:install"

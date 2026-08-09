@@ -1,5 +1,21 @@
 import { defineConfig } from "vite-plus";
 
+const ignorePatterns = [
+  "**/dist/**",
+  "**/dist-ssr/**",
+  "**/.output/**",
+  "**/.nitro/**",
+  "**/.tanstack/**",
+  "**/.wrangler/**",
+  "**/.source/**",
+  "**/.vinxi/**",
+  "**/coverage/**",
+  "**/*.tsbuildinfo",
+  "**/routeTree.gen.ts",
+  "**/__unconfig*",
+  "**/todos.json",
+];
+
 export default defineConfig({
   staged: {
     "*": "vp check --fix",
@@ -17,8 +33,9 @@ export default defineConfig({
       typeAware: true,
       typeCheck: true,
     },
+    ignorePatterns,
   },
-  fmt: {},
+  fmt: { ignorePatterns },
   run: {
     tasks: {
       check: {

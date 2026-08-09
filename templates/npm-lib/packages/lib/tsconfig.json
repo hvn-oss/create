@@ -1,0 +1,12 @@
+{
+  "$schema": "../../node_modules/@effect/tsgo/schema.json",
+  "extends": "@hvn-oss/tsconfig/node-library",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "@effect/language-service"
+      }
+    ]
+  },
+  "include": ["src", "tests"]
+}

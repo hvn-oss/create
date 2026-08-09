@@ -1,23 +1,28 @@
-# vite-plus-starter
+# Node Library
 
-A starter for creating a Vite Plus project.
+A minimal TypeScript library for Node.js, powered by [Vite+](https://viteplus.dev/).
 
-## Development
-
-- Install dependencies:
+## Quick Start
 
 ```bash
 vp install
+vp run dev
 ```
 
-- Run the unit tests:
+Edit `src/index.ts` to build your public API. Tests live in `tests/` and run with Vitest through
+Vite+.
 
-```bash
-vp test
-```
+## Commands
 
-- Build the library:
+| Command        | Description                              |
+| -------------- | ---------------------------------------- |
+| `vp run dev`   | Build the library in watch mode          |
+| `vp run build` | Create the production build in `dist/`   |
+| `vp run test`  | Run the test suite                       |
+| `vp run check` | Format, lint, and type-check the project |
+| `vp run clean` | Remove dependencies and build output     |
 
-```bash
-vp pack
-```
+## Publishing
+
+Before publishing, update the package name, description, author, repository, and other metadata in
+`package.json`. The package exports the ESM bundle generated at `dist/index.mjs`.

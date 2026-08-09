@@ -1,0 +1,35 @@
+{
+  "name": "npm-lib",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vp run docs#dev",
+    "ready": "vp check --fix && vp run build && vp run test",
+    "build": "vp run -r build",
+    "test": "vp test && vp run -r test",
+    "typecheck": "vp run -r typecheck",
+    "clean": "vp run -r clean && git clean -fdx node_modules dist .output",
+    "prepare": "vp config && effect-tsgo patch --typescript"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "catalog:",
+    "@changesets/cli": "catalog:",
+    "@effect/tsgo": "catalog:",
+    "@hvn-oss/tsconfig": "catalog:",
+    "effect-solutions": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.20.0",
+      "onFail": "download"
+    }
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}

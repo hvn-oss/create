@@ -1,28 +1,21 @@
 import { defineConfig } from "vite-plus";
 
-const ignorePatterns = [
-  "**/dist/**",
-  "**/dist-ssr/**",
-  "**/.output/**",
-  "**/coverage/**",
-  "**/*.tsbuildinfo",
-];
-
 export default defineConfig({
   pack: {
+    entry: ["src/index.ts"],
     dts: {
       tsgo: true,
     },
     exports: true,
+    target: "es2022",
   },
   lint: {
-    ignorePatterns,
     options: {
       typeAware: true,
       typeCheck: true,
     },
   },
-  fmt: { ignorePatterns },
+  fmt: {},
   test: {
     passWithNoTests: true,
   },

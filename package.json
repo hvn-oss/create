@@ -23,8 +23,8 @@
     "@changesets/changelog-github": "^0.7.0",
     "@changesets/cli": "3.0.0-next.11",
     "typescript": "^7.0.2",
-    "vite": "npm:@voidzero-dev/vite-plus-core@0.2.7",
-    "vite-plus": "0.2.7"
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.2.8",
+    "vite-plus": "0.2.8"
   },
   "devEngines": {
     "packageManager": {
@@ -39,6 +39,11 @@
         "name": "node-lib",
         "description": "A Node.js library template.",
         "template": "./templates/node-lib"
+      },
+      {
+        "name": "npm-lib",
+        "description": "A Node.js library template for publishing to npm.",
+        "template": "./templates/npm-lib"
       }
     ]
   }
